@@ -8,7 +8,7 @@ const DepartmentSummary = () => {
       <div className="dept-grid">
         <div className="dept-card">
           <h3>IT</h3>
-          <p>8 Employees</p>
+          <p>5 Employees</p>
         </div>
 
         <div className="dept-card">
@@ -28,7 +28,7 @@ const DepartmentSummary = () => {
 
         <div className="dept-card">
           <h3>Admin</h3>
-          <p>2 Employees</p>
+          <p>3 Employees</p>
         </div>
       </div>
     </div>
