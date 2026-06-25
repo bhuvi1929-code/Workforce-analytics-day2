@@ -7,14 +7,18 @@ import PieChartComponent from "../components/Charts/PieChartComponent";
 import AreaChartComponent from "../components/Charts/AreaChartComponent";
 import DonutChartComponent from "../components/Charts/DonutChartComponent";
 
-import { FaUsers, FaBullseye } from "react-icons/fa";
-import { FaChartPie } from "react-icons/fa";
+import {
+  FaUsers,
+  FaChartPie,
+  FaBullseye,
+  FaAward,
+} from "react-icons/fa";
+
 import { FaArrowTrendUp } from "react-icons/fa6";
 
 const Dashboard = () => {
   return (
     <>
-      {/* Dashboard Banner */}
       <div className="dashboard-banner">
         <h1>Workforce Analytics Dashboard</h1>
 
@@ -24,45 +28,49 @@ const Dashboard = () => {
         </p>
       </div>
 
-      {/* KPI Cards */}
       <div className="kpi-grid">
-  <KPICard
-    title="Total Employees"
-    value="1250"
-    icon={<FaUsers />}
-    chart={<LineChartComponent />}
-  />
+        <KPICard
+          title="Total Employees"
+          value="1250"
+          icon={<FaUsers />}
+          chart={<LineChartComponent />}
+        />
 
-  <KPICard
-    title="Attrition Rate"
-    value="12%"
-    icon={<FaChartPie />}
-    chart={<PieChartComponent />}
-  />
+        <KPICard
+          title="Attrition Rate"
+          value="12%"
+          icon={<FaChartPie />}
+          chart={<PieChartComponent />}
+        />
 
-  <KPICard
-    title="Hiring Rate"
-    value="8%"
-    icon={<FaArrowTrendUp />}
-    chart={<AreaChartComponent />}
-  />
+        <KPICard
+          title="Hiring Rate"
+          value="8%"
+          icon={<FaArrowTrendUp />}
+          chart={<AreaChartComponent />}
+        />
 
-  <KPICard
-    title="Skill Coverage"
-    value="91%"
-    icon={<FaBullseye />}
-    chart={<DonutChartComponent />}
-  />
-</div>
+        <KPICard
+          title="Skill Coverage"
+          value="91%"
+          icon={<FaBullseye />}
+          chart={<DonutChartComponent />}
+        />
 
-      {/* Employee Table */}
+        <KPICard
+          title="Avg Experience"
+          value="3.8 Yrs"
+          icon={<FaAward />}
+          chart={<AreaChartComponent />}
+/>
+      </div>
+
       <h2 className="section-title">
         Employee Table
       </h2>
 
       <EmployeeTable />
 
-      {/* Department Summary */}
       <DepartmentSummary />
     </>
   );

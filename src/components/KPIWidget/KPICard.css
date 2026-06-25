@@ -44,6 +44,14 @@
   );
 }
 
+.kpi-card:nth-child(5) {
+  background: linear-gradient(
+    135deg,
+    rgb(245, 158, 11),
+    rgb(249, 115, 22)
+  );
+}
+
 .kpi-header {
   display: flex;
   justify-content: center;
