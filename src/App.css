@@ -1,0 +1,176 @@
+/* Background */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    rgb(15, 23, 42),
+    rgb(30, 58, 138),
+    rgb(51, 65, 85)
+  );
+
+  min-height: 100vh;
+}
+
+/* Banner */
+
+.dashboard-banner {
+  background: linear-gradient(
+    90deg,
+    rgb(37, 99, 235),
+    rgb(124, 58, 237)
+  );
+
+  color: white;
+
+  padding: 30px;
+  border-radius: 18px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.dashboard-banner h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.dashboard-banner p {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* KPI Grid */
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Section Headings */
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 15px;
+
+  color: white;
+  font-size: 28px;
+}
+
+/* Table Container */
+
+.employee-table-container {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  overflow-x: auto;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Employee Table */
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th {
+  background: rgb(30, 64, 175);
+  color: white;
+  padding: 14px;
+}
+
+.employee-table td {
+  padding: 12px;
+  color: rgb(17, 24, 39);
+  border: 1px solid rgb(229, 231, 235);
+}
+
+.employee-table tr:nth-child(odd) {
+  background: rgb(248, 250, 252);
+}
+
+.employee-table tr:nth-child(even) {
+  background: rgb(219, 234, 254);
+}
+
+.employee-table tr:hover {
+  background: rgb(191, 219, 254);
+}
+
+/* Department Summary */
+
+.department-summary {
+  margin-top: 40px;
+}
+
+.department-summary h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.department-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.department-card {
+  background: white;
+
+  padding: 25px;
+  text-align: center;
+
+  border-radius: 15px;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+.department-card:hover {
+  transform: translateY(-5px);
+}
+
+.department-card h3 {
+  color: rgb(37, 99, 235);
+  margin-bottom: 10px;
+}
+
+.department-card p {
+  color: rgb(55, 65, 81);
+  font-weight: bold;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .department-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .department-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-banner h1 {
+    font-size: 28px;
+  }
+}

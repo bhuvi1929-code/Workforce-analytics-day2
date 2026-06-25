@@ -1,0 +1,33 @@
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.employee-table th {
+  background: rgb(30, 58, 138);
+  color: white;
+  padding: 12px;
+}
+
+.employee-table td {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 10px;
+  color: rgb(17, 24, 39);
+  font-weight: 500;
+}
+
+.employee-table tr:nth-child(odd) {
+  background: rgb(224, 242, 254);   /* Light Blue */
+}
+
+.employee-table tr:nth-child(even) {
+  background: rgb(248, 250, 252);   /* Light Gray */
+}
+
+.employee-table tr:hover {
+  background: rgb(191, 219, 254);
+}

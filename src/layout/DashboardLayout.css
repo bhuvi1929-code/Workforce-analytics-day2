@@ -1,0 +1,43 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(
+    180deg,
+    rgb(15, 23, 42),
+    rgb(30, 58, 138)
+  );
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  width: 100%;
+}

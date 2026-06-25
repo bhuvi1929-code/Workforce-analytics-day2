@@ -1,0 +1,33 @@
+.dept-section {
+  margin-top: 40px;
+}
+
+.dept-section h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.dept-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dept-card h3 {
+  color: rgb(37, 99, 235);
+  margin-bottom: 10px;
+}
+
+.dept-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(55, 65, 81);
+}
